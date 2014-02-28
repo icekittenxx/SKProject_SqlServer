@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 
     UI_MainWindow w;
     UI_LOGIN login;
+
     if(login.exec() == QDialog::Accepted){
         w.show();
         return a.exec();

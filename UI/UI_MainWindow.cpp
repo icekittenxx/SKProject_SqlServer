@@ -6,6 +6,7 @@ UI_MainWindow::UI_MainWindow(QWidget *parent) :
     ui(new Ui::UI_MainWindow)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags()& Qt::WindowMaximizeButtonHint& Qt::WindowMinimizeButtonHint);
 }
 
 UI_MainWindow::~UI_MainWindow()

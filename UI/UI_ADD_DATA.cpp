@@ -6,6 +6,7 @@ UI_ADD_DATA::UI_ADD_DATA(QWidget *parent) :
     ui(new Ui::UI_ADD_DATA)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags()& Qt::WindowMaximizeButtonHint& Qt::WindowMinimizeButtonHint);
 }
 
 UI_ADD_DATA::~UI_ADD_DATA()

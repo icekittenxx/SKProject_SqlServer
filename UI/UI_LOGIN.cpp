@@ -8,6 +8,8 @@ UI_LOGIN::UI_LOGIN(QWidget *parent) :
     ui(new Ui::UI_LOGIN)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags()& Qt::WindowMaximizeButtonHint& Qt::WindowMinimizeButtonHint);
+
     ui->EDIT_PASSWORD->setEchoMode(QLineEdit::Password);
 }
 

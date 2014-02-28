@@ -6,6 +6,8 @@ UI_WELL::UI_WELL(QWidget *parent) :
     ui(new Ui::UI_WELL)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags()& Qt::WindowMaximizeButtonHint& Qt::WindowMinimizeButtonHint);
+
     ui->EDIT_COLUMN->setEnabled(false);
 
     page_size = 5;
