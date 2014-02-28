@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UI_WELL</class>
+ <widget class="QDialog" name="UI_WELL">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>708</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="GROUP_BOX_3">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="SELECT_WELL">
+        <property name="text">
+         <string>WELL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="SELECT_WELL_BASIC">
+        <property name="text">
+         <string>WELL_BASIC</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="GROUP_BOX_2">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QSplitter" name="SPLITTER_1">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="LABEL_QUERY_COLUMN">
+         <property name="text">
+          <string>查询列：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="EDIT_COLUMN"/>
+        <widget class="QLabel" name="LABEL_QUERY_VALUE">
+         <property name="text">
+          <string>查询值：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="EDIT_VALUE"/>
+        <widget class="QPushButton" name="BUTTON_QUERY">
+         <property name="text">
+          <string>查询</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_ADD">
+         <property name="text">
+          <string>增加</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_DELETE">
+         <property name="text">
+          <string>删除</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QGroupBox" name="GROUP_BOX_1">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableView" name="TABLEVIEW"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSplitter" name="SPLITTER_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QPushButton" name="BUTTON_TURN_TO_FIRST_PAGE">
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_TURN_TO_PREVIOUS_PAGE">
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_TURN_TO_NEXT_PAGE">
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_TURN_TO_LAST_PAGE">
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="EDIT_PAGE_NUMBER"/>
+        <widget class="QLabel" name="LABEL_ALL_PAGE">
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BUTTON_TURN_TO_DESIGNATED_PAGE">
+         <property name="text">
+          <string>跳转</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
