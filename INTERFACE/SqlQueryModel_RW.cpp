@@ -120,3 +120,8 @@ void SqlQueryModel_RW::set_page_number(int p_n)
 {
     page_number = p_n;
 }
+
+void SqlQueryModel_RW::set_page_size(int p_z)
+{
+    page_size = p_z;
+}

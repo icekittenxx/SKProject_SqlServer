@@ -86,10 +86,49 @@
       <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
+      <item row="0" column="0" colspan="2">
        <widget class="QTableView" name="TABLEVIEW"/>
       </item>
       <item row="1" column="0">
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="LABEL_PAGE_SIZE_1">
+         <property name="text">
+          <string>每页</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="COMBO_PAGE_SIZE">
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="LABEL_PAGE_SIZE_2">
+         <property name="text">
+          <string>记录</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="1">
        <widget class="QSplitter" name="SPLITTER_2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>

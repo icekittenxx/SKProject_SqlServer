@@ -23,6 +23,7 @@ public:
     int get_row_count();
     int get_page_number();
     void set_page_number(int p_n);
+    void set_page_size(int p_z);
 
 private:
     QString table_name;

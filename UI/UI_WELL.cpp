@@ -91,6 +91,25 @@ void UI_WELL::on_BUTTON_DELETE_clicked()
     ui->LABEL_ALL_PAGE->setText("/" + LABEL_SHOW_PAGE);
 }
 
+void UI_WELL::on_COMBO_PAGE_SIZE_activated(const QString &arg1)
+{
+    //qDebug() << arg1;
+    bool change_flag;
+    page_size = arg1.toInt(&change_flag, 10);
+    model_rw->set_page_size(arg1.toInt(&change_flag, 10));
+    model_rw->refresh();
+
+    row_count = model_rw->get_row_count();
+    page_number = model_rw->get_page_number();
+    all_page_number = row_count / page_size;
+    if(all_page_number * page_size != row_count)
+    {
+        all_page_number ++;
+    }
+    QString LABEL_SHOW_PAGE = QString::number(all_page_number, 10);
+    ui->LABEL_ALL_PAGE->setText("/" + LABEL_SHOW_PAGE);
+}
+
 void UI_WELL::on_BUTTON_TURN_TO_FIRST_PAGE_clicked()
 {
     page_number = 0;

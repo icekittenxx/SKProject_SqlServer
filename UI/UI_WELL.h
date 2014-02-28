@@ -41,6 +41,8 @@ private slots:
 
     void on_BUTTON_DELETE_clicked();
 
+    void on_COMBO_PAGE_SIZE_activated(const QString &arg1);
+
     void on_BUTTON_TURN_TO_FIRST_PAGE_clicked();
 
     void on_BUTTON_TURN_TO_PREVIOUS_PAGE_clicked();
