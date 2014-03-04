@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>数据管理</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
    <item row="0" column="0" colspan="2">
@@ -23,14 +23,14 @@
       <item row="0" column="0">
        <widget class="QPushButton" name="SELECT_WELL">
         <property name="text">
-         <string>WELL</string>
+         <string>井</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
        <widget class="QPushButton" name="SELECT_WELL_BASIC">
         <property name="text">
-         <string>WELL_BASIC</string>
+         <string>井基本信息</string>
         </property>
        </widget>
       </item>
@@ -90,7 +90,7 @@
        <widget class="QTableView" name="TABLEVIEW"/>
       </item>
       <item row="1" column="0">
-       <widget class="QSplitter" name="splitter">
+       <widget class="QSplitter" name="SPLITTER_3">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -123,7 +123,7 @@
         </widget>
         <widget class="QLabel" name="LABEL_PAGE_SIZE_2">
          <property name="text">
-          <string>记录</string>
+          <string>条记录</string>
          </property>
         </widget>
        </widget>
