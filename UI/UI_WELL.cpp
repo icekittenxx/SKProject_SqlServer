@@ -9,6 +9,7 @@ UI_WELL::UI_WELL(QWidget *parent) :
     setWindowFlags(windowFlags()& Qt::WindowMaximizeButtonHint& Qt::WindowMinimizeButtonHint);
 
     ui->EDIT_COLUMN->setEnabled(false);
+    ui->EDIT_EXCEL->setText("D:/test.xls");
 
     page_size = 5;
 }
@@ -91,6 +92,14 @@ void UI_WELL::on_BUTTON_DELETE_clicked()
     }
     QString LABEL_SHOW_PAGE = QString::number(all_page_number, 10);
     ui->LABEL_ALL_PAGE->setText("/" + LABEL_SHOW_PAGE);
+}
+
+
+void UI_WELL::on_BUTTON_EXPORT_TO_EXCEL_clicked()
+{
+    QString fileName = ui->EDIT_EXCEL->text();
+    model_rw->export_to_excel(fileName);
+    //QSqlDatabase::removeDatabase("excelexport");
 }
 
 void UI_WELL::on_COMBO_PAGE_SIZE_activated(const QString &arg1)

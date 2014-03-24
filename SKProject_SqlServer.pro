@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     INTERFACE/SqlQueryModel_RW.cpp \
     LOGIC/WELL/LOGIC_WELL_BASIC.cpp \
     UI/UI_ADD_DATA.cpp \
-    LOGIC/WELL/LOGIC_WELL.cpp
+    LOGIC/WELL/LOGIC_WELL.cpp \
+    INTERFACE/ExportToExcel.cpp
 
 HEADERS  += UI/UI_MainWindow.h \
     DB/DB_CONNECT.h \
@@ -34,7 +35,8 @@ HEADERS  += UI/UI_MainWindow.h \
     INTERFACE/SqlQueryModel_RW.h \
     LOGIC/WELL/LOGIC_WELL_BASIC.h \
     UI/UI_ADD_DATA.h \
-    LOGIC/WELL/LOGIC_WELL.h
+    LOGIC/WELL/LOGIC_WELL.h \
+    INTERFACE/ExportToExcel.h
 
 FORMS    += UI/UI_MainWindow.ui \
     UI/UI_LOGIN.ui \

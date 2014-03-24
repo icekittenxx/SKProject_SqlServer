@@ -125,3 +125,11 @@ void SqlQueryModel_RW::set_page_size(int p_z)
 {
     page_size = p_z;
 }
+
+void SqlQueryModel_RW::export_to_excel(QString file_name)
+{
+    QString select_column = query_sql.QSTRING_SELECT_COLUMN(column_name);
+    QSqlQuery query = query_sql.SELECT_CONDITION_EXCUTE(select_column, table_name, sel_con_col_nam, sel_con_col_val);
+
+    ExportToExcel e_to_e(file_name, query, table_name, column_name);
+}

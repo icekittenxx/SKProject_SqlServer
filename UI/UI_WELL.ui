@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>708</width>
+    <width>709</width>
     <height>367</height>
    </rect>
   </property>
@@ -20,7 +20,14 @@
       <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
+      <item row="1" column="1">
+       <widget class="QPushButton" name="SELECT_WELL_BASIC">
+        <property name="text">
+         <string>井基本信息</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
        <widget class="QPushButton" name="SELECT_WELL">
         <property name="text">
          <string>井</string>
@@ -28,11 +35,14 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="SELECT_WELL_BASIC">
+       <widget class="QPushButton" name="BUTTON_EXPORT_TO_EXCEL">
         <property name="text">
-         <string>井基本信息</string>
+         <string>导出成EXCEL</string>
         </property>
        </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="EDIT_EXCEL"/>
       </item>
      </layout>
     </widget>

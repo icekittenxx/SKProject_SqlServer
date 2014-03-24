@@ -18,6 +18,8 @@
 #include "../LOGIC/WELL/LOGIC_WELL.h"
 #include "../LOGIC/WELL/LOGIC_WELL_BASIC.h"
 
+#include "../DB/DB_CONNECT.h"
+
 #include "UI_ADD_DATA.h"
 
 namespace Ui {
@@ -40,6 +42,8 @@ private slots:
     void on_BUTTON_ADD_clicked();
 
     void on_BUTTON_DELETE_clicked();
+
+    void on_BUTTON_EXPORT_TO_EXCEL_clicked();
 
     void on_COMBO_PAGE_SIZE_activated(const QString &arg1);
 

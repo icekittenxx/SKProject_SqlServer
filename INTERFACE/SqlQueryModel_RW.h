@@ -7,6 +7,7 @@
 #include <QVector>
 
 #include "../DB/DB_SQL.h"
+#include "ExportToExcel.h"
 
 class SqlQueryModel_RW : public QSqlQueryModel
 {
@@ -24,6 +25,8 @@ public:
     int get_page_number();
     void set_page_number(int p_n);
     void set_page_size(int p_z);
+
+    void export_to_excel(QString file_name);
 
 private:
     QString table_name;
